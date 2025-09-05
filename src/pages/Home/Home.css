@@ -1,0 +1,16 @@
+
+.home-page {
+  padding: 1rem;
+}
+.home-page h2 {
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(7,22,43,0.08);
+}

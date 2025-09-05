@@ -1,0 +1,151 @@
+#root{
+  background: linear-gradient(180deg, #ffe066 0%, #13335b 40%, #0a2239 100%);
+  color: var(--text);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --bg: #0a2239;
+  --text: #f8fafc;
+  --card-bg: #13335b;
+  --navbar-bg: #102542;
+  --navbar-link: #ffe066; 
+  --navbar-link-hover: #ffd60a;
+  --accent: #ffe066;
+  --card-border: #ffe066;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--navbar-link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--navbar-link-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--navbar-link);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #07162b;
+    --text: #e0e7ef;
+    --card-bg: #102542;
+    --navbar-bg: #07162b;
+    --navbar-link: #ffe066;
+    --navbar-link-hover: #ffd60a;
+    --accent: #ffe066;
+    --card-border: #ffe066;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 1.25rem 0.75rem;
+  box-sizing: border-box;
+  background: rgba(10,34,57,0.7);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(10,34,57,0.10);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 1.25em;
+  background: var(--card-bg);
+  border-radius: 16px;
+  margin: 1.25rem 0;
+  box-shadow: 0 4px 16px rgba(10,34,57,0.18);
+  border: 3px solid var(--accent);
+  color: var(--text);
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(10,34,57,0.28);
+  border-color: #ffd60a;
+}
+
+@media (min-width: 600px) {
+  .container {
+    margin: 2rem auto 0 auto;
+    max-width: 700px;
+    padding: 2rem;
+  }
+  .card {
+    padding: 2em;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,0 +1,16 @@
+
+.region-page {
+  padding: 1rem;
+}
+.region-header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.region-info {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(7,22,43,0.08);
+}
